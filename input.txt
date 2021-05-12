@@ -1,0 +1,70 @@
+(+ 5 3)
+(+ 10 20)
+(+ 10 10 1 1)
+(+ 4 (+ 3 2))
+(+ ?test 15)
+(+ ?var1 ?var2)
+(+ +2 -2)
+(+ ?var 2)
+(+ 5 5)
+(- 10 5)
+(- -5 5)
+(- 5 2)
+(* 10 10)
+(* -10 2)
+(* -5 -5)
+(/ 10 5)
+(/ 10 -5)
+(/ -10 5)
+(= 1 1)
+(= 1 0)
+;New line of code
+(test (= 1 1))
+(test (= 1 1) (= 0 1))
+(read ?var)
+(bind ?var 10)
+(deffacts rule_1 (packman 1) (packman 5) (b 10 (* ?var 2)))
+(defrule move-UP
+ ;new rules
+ (packman-at ?x ?y)
+ (food-at ?z ?y)
+ (test (= ?z (- ?x 1)))
+->
+ ;;; prints just a message
+ (printout t (packman has reached food))
+ ;binding
+ (bind ?var 4)
+ ;read
+ (read ?var)
+)
+(+ 5 03)
+(+ 5 -00)
+(+ 6 +0)
+(defrule move-UP
+ ;new rules
+ (packman-at ?x ?y)
+ (food-at ?z ?y)
+ (test (= ?z (- ?x 1)))
+->
+ ;;; prints just a message
+ (printout t (packman has reached food))
+ ;binding
+ (bind ?var 4)
+ ;read
+ (read @var)
+)
+(++ ?var)
+(== ?var 1)
+(= ?var 00)
+(deffacts (packman 1) (packman 5) (b 10 (* ?var 2)))
+(deffacts (-packman 1) (packman 5) (b 10 (* ?v_ar 2)))
+
+(defrule move-UP
+ ;new rules
+ (packman-at ?x ?y)
+ (food-at ?z &y)
+ (test (= ?z (- ?x 1)))
+->
+ ;;; prints just a message
+
+)

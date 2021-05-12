@@ -1,0 +1,462 @@
+
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 5 
+	INTEGERS: 3 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 10 
+	INTEGERS: 20 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 10 
+	INTEGERS: 10 
+	INTEGERS: 1 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 4 
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 3 
+	INTEGERS: 2 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	VARIABLE: ?test 
+	INTEGERS: 15 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	VARIABLE: ?var1 
+	VARIABLE: ?var2 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: +2 
+	INTEGERS: -2 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	VARIABLE: ?var 
+	INTEGERS: 2 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 5 
+	INTEGERS: 5 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MINUS: - 
+	INTEGERS: 10 
+	INTEGERS: 5 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MINUS: - 
+	INTEGERS: -5 
+	INTEGERS: 5 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MINUS: - 
+	INTEGERS: 5 
+	INTEGERS: 2 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MULT: * 
+	INTEGERS: 10 
+	INTEGERS: 10 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MULT: * 
+	INTEGERS: -10 
+	INTEGERS: 2 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MULT: * 
+	INTEGERS: -5 
+	INTEGERS: -5 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	DIV: / 
+	INTEGERS: 10 
+	INTEGERS: 5 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	DIV: / 
+	INTEGERS: 10 
+	INTEGERS: -5 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	DIV: / 
+	INTEGERS: -10 
+	INTEGERS: 5 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	EQUALS: = 
+	INTEGERS: 1 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	EQUALS: = 
+	INTEGERS: 1 
+	INTEGERS: 0 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	COMMENTS: ;New line of code 
+	Left parenthesis: ( 
+	TEST: test 
+	Left parenthesis: ( 
+	EQUALS: = 
+	INTEGERS: 1 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+Test Function.
+	Left parenthesis: ( 
+	TEST: test 
+	Left parenthesis: ( 
+	EQUALS: = 
+	INTEGERS: 1 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	EQUALS: = 
+	INTEGERS: 0 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+Test Function.
+	Left parenthesis: ( 
+	READ: read 
+	VARIABLE: ?var 
+	Right parenthesis: ) 
+Read Function.
+	Left parenthesis: ( 
+	BIND: bind 
+	VARIABLE: ?var 
+	INTEGERS: 10 
+	Right parenthesis: ) 
+Bind Function.
+	Left parenthesis: ( 
+	DEFFACTS: deffacts 
+	STATE: rule_1 
+	Left parenthesis: ( 
+	STATE: packman 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	STATE: packman 
+	INTEGERS: 5 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	STATE: b 
+	INTEGERS: 10 
+	Left parenthesis: ( 
+	MULT: * 
+	VARIABLE: ?var 
+	INTEGERS: 2 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+Deffacts Definition.
+	Left parenthesis: ( 
+	DEFRULE: defrule 
+	STATE: move-UP 
+	COMMENTS: ;new rules 
+	Left parenthesis: ( 
+	STATE: packman-at 
+	VARIABLE: ?x 
+	VARIABLE: ?y 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	STATE: food-at 
+	VARIABLE: ?z 
+	VARIABLE: ?y 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	TEST: test 
+	Left parenthesis: ( 
+	EQUALS: = 
+	VARIABLE: ?z 
+	Left parenthesis: ( 
+	MINUS: - 
+	VARIABLE: ?x 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	MINUS: - 
+	ARROW: > 
+	COMMENTS: ;;; prints just a message 
+	Left parenthesis: ( 
+	PRINT: printout t 
+	Left parenthesis: ( 
+	STATE: packman 
+	STATE: has 
+	STATE: reached 
+	STATE: food 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	COMMENTS: ;binding 
+	Left parenthesis: ( 
+	BIND: bind 
+	VARIABLE: ?var 
+	INTEGERS: 4 
+	Right parenthesis: ) 
+	COMMENTS: ;read 
+	Left parenthesis: ( 
+	READ: read 
+	VARIABLE: ?var 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+Defrule Definition.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 5 
+	Number starting with 0: 03 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 5 
+	Signed 0: -0 
+	INTEGERS: 0 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	PLUS: + 
+	INTEGERS: 6 
+	Signed 0: +0 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	DEFRULE: defrule 
+	STATE: move-UP 
+	COMMENTS: ;new rules 
+	Left parenthesis: ( 
+	STATE: packman-at 
+	VARIABLE: ?x 
+	VARIABLE: ?y 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	STATE: food-at 
+	VARIABLE: ?z 
+	VARIABLE: ?y 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	TEST: test 
+	Left parenthesis: ( 
+	EQUALS: = 
+	VARIABLE: ?z 
+	Left parenthesis: ( 
+	MINUS: - 
+	VARIABLE: ?x 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	MINUS: - 
+	ARROW: > 
+	COMMENTS: ;;; prints just a message 
+	Left parenthesis: ( 
+	PRINT: printout t 
+	Left parenthesis: ( 
+	STATE: packman 
+	STATE: has 
+	STATE: reached 
+	STATE: food 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	COMMENTS: ;binding 
+	Left parenthesis: ( 
+	BIND: bind 
+	VARIABLE: ?var 
+	INTEGERS: 4 
+	Right parenthesis: ) 
+	COMMENTS: ;read 
+	Left parenthesis: ( 
+	READ: read 
+Wrong word definition at line: 54
+	STATE: var 
+Line: 53 FAILURE syntax error
+
+Syntax error
+Syntax error
+	Right parenthesis: ) 
+Syntax error
+	Right parenthesis: ) 
+Syntax error
+	Left parenthesis: ( 
+	PLUS: + 
+	PLUS: + 
+Syntax error
+Syntax error
+	VARIABLE: ?var 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Syntax error
+Syntax error
+	Left parenthesis: ( 
+	EQUALS: = 
+	EQUALS: = 
+Syntax error
+Syntax error
+	VARIABLE: ?var 
+Mathimatic Expression.
+	INTEGERS: 1 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Syntax error
+Syntax error
+	Left parenthesis: ( 
+	EQUALS: = 
+	VARIABLE: ?var 
+	Number starting with 0: 00 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	DEFFACTS: deffacts 
+	Left parenthesis: ( 
+Line: 58 FAILURE syntax error
+
+Syntax error
+	STATE: packman 
+Syntax error
+Syntax error
+	INTEGERS: 1 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Syntax error
+Syntax error
+	Left parenthesis: ( 
+	STATE: packman 
+Syntax error
+Syntax error
+	INTEGERS: 5 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Syntax error
+Syntax error
+	Left parenthesis: ( 
+	STATE: b 
+Syntax error
+Syntax error
+	INTEGERS: 10 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MULT: * 
+	VARIABLE: ?var 
+	INTEGERS: 2 
+	Right parenthesis: ) 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Line: 58 FAILURE syntax error
+
+Syntax error
+Syntax error
+	Right parenthesis: ) 
+Syntax error
+	Left parenthesis: ( 
+	DEFFACTS: deffacts 
+	Left parenthesis: ( 
+Syntax error
+	MINUS: - 
+	STATE: packman 
+Syntax error
+Syntax error
+	INTEGERS: 1 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Syntax error
+Syntax error
+	Left parenthesis: ( 
+	STATE: packman 
+Syntax error
+Syntax error
+	INTEGERS: 5 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Syntax error
+Syntax error
+	Left parenthesis: ( 
+	STATE: b 
+Syntax error
+Syntax error
+	INTEGERS: 10 
+Mathimatic Expression.
+	Left parenthesis: ( 
+	MULT: * 
+	VARIABLE: ?v 
+Wrong word definition at line: 60
+	STATE: ar 
+Line: 59 FAILURE syntax error
+
+Syntax error
+Syntax error
+	INTEGERS: 2 
+Mathimatic Expression.
+	Right parenthesis: ) 
+Syntax error
+Syntax error
+	Right parenthesis: ) 
+Syntax error
+	Right parenthesis: ) 
+Syntax error
+	Left parenthesis: ( 
+	DEFRULE: defrule 
+	STATE: move-UP 
+	COMMENTS: ;new rules 
+	Left parenthesis: ( 
+	STATE: packman-at 
+	VARIABLE: ?x 
+	VARIABLE: ?y 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	STATE: food-at 
+	VARIABLE: ?z 
+Wrong word definition at line: 65
+	STATE: y 
+	Right parenthesis: ) 
+	Left parenthesis: ( 
+	TEST: test 
+	Left parenthesis: ( 
+	EQUALS: = 
+	VARIABLE: ?z 
+	Left parenthesis: ( 
+	MINUS: - 
+	VARIABLE: ?x 
+	INTEGERS: 1 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	Right parenthesis: ) 
+	MINUS: - 
+	ARROW: > 
+	COMMENTS: ;;; prints just a message 
+	Right parenthesis: ) 
+Line: 69 FAILURE syntax error
+
+Syntax error
+Syntax error
